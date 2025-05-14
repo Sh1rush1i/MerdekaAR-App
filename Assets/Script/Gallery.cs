@@ -1,13 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Gallery : MonoBehaviour
 {
+    public DEBUG debugs;
     private VurinaScript vurinaScript;
     [Header("References")]
     public GameObject galeryPanel;
     public GameObject VurinaPanel;
+    public GameObject VurinaSearchPanel;
     [Space(10)]
     private AuthManager authManager;
 
@@ -36,6 +39,7 @@ public class Gallery : MonoBehaviour
     {
         authManager = GetComponent<AuthManager>();
         vurinaScript = GetComponent<VurinaScript>();
+        debugs = GetComponent<DEBUG>();
     }
 
     public void UpdateLocks()
@@ -57,44 +61,74 @@ public class Gallery : MonoBehaviour
         VurinaPanel.SetActive(true);
         galeryPanel.SetActive(false);
     }
-    public void Soekarno()
+    void enableVurinaSearch()
     {
-        if(authManager.currentUser.Soekarno)
+        VurinaSearchPanel.SetActive(true);
+        galeryPanel.SetActive(false);
+    }
+    public void Soekarno(bool BOOL= false)
+    {
+        if(authManager.currentUser.Soekarno && !BOOL)
         {
             enablevurina();
             vurinaScript.enableVurina(SoekarnosScriptableObject);
         }
+        else if(BOOL)
+        {
+            enableVurinaSearch();
+            debugs.SetButtonAction("Soekarno");
+        }
     }
-    public void Hatta()
+    public void Hatta(bool BOOL= false)
     {
-        if(authManager.currentUser.Hatta)
+        if(authManager.currentUser.Hatta && !BOOL)
         {
             enablevurina();
             vurinaScript.enableVurina(HattaScriptableObject);
         }
+        else if(BOOL)
+        {
+            enableVurinaSearch();
+            debugs.SetButtonAction("Hatta");
+        }
     }
-    public void Diorama_Proklamasi()
+    public void Diorama_Proklamasi(bool BOOL= false)
     {
-        if(authManager.currentUser.Diorama_Proklamasi)
+        if(authManager.currentUser.Diorama_Proklamasi && !BOOL)
         {
             enablevurina();
             vurinaScript.enableVurina(Diorama_ProklamasiScriptableObject);
         }
+        else if(BOOL)
+        {
+            enableVurinaSearch();
+            debugs.SetButtonAction("Diorama_Proklamasi");
+        }
     }
-    public void Dokumen_Proklamasi()
+    public void Dokumen_Proklamasi(bool BOOL= false)
     {
-        if(authManager.currentUser.Dokumen_Proklamasi)
+        if(authManager.currentUser.Dokumen_Proklamasi && !BOOL)
         {
             enablevurina();
             vurinaScript.enableVurina(Dokumen_ProklamasiScriptableObject);
         }
+        else if(BOOL)
+        {
+            enableVurinaSearch();
+            debugs.SetButtonAction("Dokumen_Proklamasi");
+        }
     }
-    public void Rumah_Soekarno()
+    public void Rumah_Soekarno(bool BOOL= false)
     {
-        if(authManager.currentUser.Rumah_Soekarno)
+        if(authManager.currentUser.Rumah_Soekarno && !BOOL)
         {
             enablevurina();
-            vurinaScript.enableVurina(Rumah_Soekarno_HattaScriptableObject);    
+            vurinaScript.enableVurina(Rumah_Soekarno_HattaScriptableObject);
+        }
+        else if(BOOL)
+        {
+            enableVurinaSearch();
+            debugs.SetButtonAction("Rumah_Soekarno");
         }
     }
 

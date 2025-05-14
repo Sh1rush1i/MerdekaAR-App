@@ -15,4 +15,32 @@ MonoBehaviour:
   objectName: Diorama Proklamasi
   sprite: {fileID: 0}
   prefab: {fileID: 0}
-  dialogues: {fileID: 11400000, guid: bf9e45852f153634685cd53f82ef58fa, type: 2}
+  dialogues:
+  - characterName: Diorama Porklamasi
+    dialogueText: Apa yang ditampilkan dalam Diorama Proklamasi?
+    correctAnswer: Adegan Soekarno dan Hatta sedang membacakan Proklamasi
+    wrongAnswers:
+    - Kisah perjuangan tentara Jepang
+    - Peristiwa Perang Dunia II di Eropa
+    - Upacara pembukaan Asian Games
+  - characterName: Diorama Porklamasi
+    dialogueText: Di mana lokasi Diorama Proklamasi berada?
+    correctAnswer: Museum Perumusan Naskah Proklamasi
+    wrongAnswers:
+    - Istana Negara
+    - Gedung MPR/DPR
+    - Monumen Nasional
+  - characterName: Diorama Porklamasi
+    dialogueText: Apa tujuan dibuatnya Diorama Proklamasi?
+    correctAnswer: Mengedukasi masyarakat tentang sejarah Proklamasi
+    wrongAnswers:
+    - Tempat rapat kenegaraan
+    - Menghargai jasa penjajah
+    - Menjadi tempat wisata biasa
+  - characterName: Diorama Porklamasi
+    dialogueText: Bagaimana bentuk Diorama Proklamasi?
+    correctAnswer: Miniatur tiga dimensi peristiwa sejarah
+    wrongAnswers:
+    - Film dokumenter tahun 1945
+    - Lukisan dinding hitam putih
+    - Koleksi senjata kuno

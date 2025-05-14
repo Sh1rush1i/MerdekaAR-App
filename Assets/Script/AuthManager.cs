@@ -27,9 +27,11 @@ public class AuthManager : MonoBehaviour
 
 
     public bool isRegistering = false;
+    private LeaderboardManager leaderboardManager;
 
     private void Start()
     {
+        leaderboardManager = GetComponent<LeaderboardManager>();
         messageText.text = "";
         loginText.text = "Login";
         BelowText.text = "Dont have an account? Register"; 
@@ -71,6 +73,10 @@ public class AuthManager : MonoBehaviour
     public void Save()
     {
         SaveUserData(currentUser);
+    }
+    public void Saveleaderboard()
+    {
+        leaderboardManager.AddOrUpdateScore(currentUser.username, currentUser.Score);
     }
 
 
@@ -129,6 +135,102 @@ public void updatescroe()
         HighscoreText.text = "Highscore: " + currentUser.Score.ToString();
     }
 }
+public void CheckHighscore(GameObjectScript gameObjectScript, int score)
+{
+    if (gameObjectScript.objectName == "Soekarno")
+    {
+        if (score > currentUser.HighScoresoekarno)
+        {
+            currentUser.HighScoresoekarno = score;
+            Save();
+        }
+    }
+    else if (gameObjectScript.objectName == "Hatta")
+    {
+        if (score > currentUser.HighScorehatta)
+        {
+            currentUser.HighScorehatta = score;
+            Save();
+        }
+    }
+    else if (gameObjectScript.objectName == "Diorama Proklamasi")
+    {
+        if (score > currentUser.HighScoreDiorama_Proklamasi)
+        {
+            currentUser.HighScoreDiorama_Proklamasi = score;
+            Save();
+        }
+    }
+    else if (gameObjectScript.objectName == "Dokumen Proklamasi")
+    {
+        if (score > currentUser.HighScoreDokumen_Proklamasi)
+        {
+            currentUser.HighScoreDokumen_Proklamasi = score;
+            Save();
+        }
+    }
+    else if (gameObjectScript.objectName == "Rumah Soekarno")
+    {
+        if (score > currentUser.HighScoreRumah_Soekarno)
+        {
+            currentUser.HighScoreRumah_Soekarno = score;
+            Save();
+        }
+    }
+
+}
+public int Returnhighscore(GameObjectScript gameObjectScript)
+{
+    if (gameObjectScript.objectName == "Soekarno")
+    {
+        return currentUser.HighScoresoekarno;
+    }
+    else if (gameObjectScript.objectName == "Hatta")
+    {
+        return currentUser.HighScorehatta;
+    }
+    else if (gameObjectScript.objectName == "Diorama Proklamasi")
+    {
+        return currentUser.HighScoreDiorama_Proklamasi;
+    }
+    else if (gameObjectScript.objectName == "Dokumen Proklamasi")
+    {
+        return currentUser.HighScoreDokumen_Proklamasi;
+    }
+    else if (gameObjectScript.objectName == "Rumah Soekarno")
+    {
+        return currentUser.HighScoreRumah_Soekarno;
+    }
+    return 0;
+}
+public void Checkstar(GameObjectScript gameObjectScript)
+{
+    if (gameObjectScript.objectName == "Soekarno")
+    {
+        currentUser.Quiz_Star_1 = true;
+        Save();
+    }
+    else if (gameObjectScript.objectName == "Hatta")
+    {
+        currentUser.Quiz_Star_2 = true;
+        Save();
+    }
+    else if (gameObjectScript.objectName == "Diorama Proklamasi")
+    {
+        currentUser.Quiz_Star_3 = true;
+        Save();
+    }
+    else if (gameObjectScript.objectName == "Dokumen Proklamasi")
+    {
+        currentUser.Quiz_Star_4 = true;
+        Save();
+    }
+    else if (gameObjectScript.objectName == "Rumah Soekarno")
+    {
+        currentUser.Quiz_Star_5 = true;
+        Save();
+    }
+}
 
 
 public void Login()
@@ -157,6 +259,20 @@ public void Login()
         messageText.text = "Incorrect password.";
     }
 }
+public void DeleteUser()
+{
+    if (PlayerPrefs.HasKey(currentUser.username))
+    {
+        PlayerPrefs.DeleteKey(currentUser.username);
+        PlayerPrefs.Save();
+        Debug.Log($"User '{currentUser.username}' deleted.");
+    }
+    else
+    {
+        Debug.Log("User not found.");
+    }
+}
+
 public void Logout()
 {
     currentUser = null;

@@ -15,4 +15,32 @@ MonoBehaviour:
   objectName: Hatta
   sprite: {fileID: 0}
   prefab: {fileID: 0}
-  dialogues: {fileID: 11400000, guid: e282fab8bd1f3db4fb0eedec5be88098, type: 2}
+  dialogues:
+  - characterName: Mohammad Hatta
+    dialogueText: Apa julukan yang sering diberikan kepada Mohammad Hatta?
+    correctAnswer: Bapak Ekonomi Indonesia
+    wrongAnswers:
+    - Bapak Pendidikan Nasional
+    - Bapak TNI
+    - Bapak Reformasi
+  - characterName: Mohammad Hatta
+    dialogueText: Di mana Mohammad Hatta lahir?
+    correctAnswer: Padang
+    wrongAnswers:
+    - Bandung
+    - Jakarta
+    - Jogja
+  - characterName: Mohammad Hatta
+    dialogueText: Apa peran Mohammad Hatta saat Proklamasi Kemerdekaan Indonesia?
+    correctAnswer: Mendampingi Soekarno saat pembacaan proklamasi
+    wrongAnswers:
+    - Menulis naskah proklamasi
+    - Membacakan teks proklamasi
+    - Menyebarkan pamflet proklamasi di radio
+  - characterName: Mohammad Hatta
+    dialogueText: Di negara mana Hatta menempuh pendidikan tinggi?
+    correctAnswer: Belanda
+    wrongAnswers:
+    - Jepang
+    - Amerika
+    - Jerman

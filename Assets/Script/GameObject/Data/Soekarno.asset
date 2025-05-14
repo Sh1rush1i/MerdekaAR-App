@@ -17,26 +17,31 @@ MonoBehaviour:
   prefab: {fileID: 0}
   dialogues:
   - characterName: Soekarno
-    dialogueText: Halo saya soekarno
-    correctAnswer: Skidbidi
+    dialogueText: Siapakah tokoh yang membacakan teks Proklamasi Kemerdekaan Indonesia
+      pada 17 Agustus 1945?
+    correctAnswer: Bung Karno
     wrongAnswers:
-    - Skidbidi
-    - Skibdob
-    - skipidapap
-    - Pap
+    - Bung Hatta
+    - Jenderal Sudirman
+    - Sutan Sjahrir
   - characterName: Soekarno
-    dialogueText: Halo saya soekarno
-    correctAnswer: Pap
+    dialogueText: ' Apa peran utama Soekarno dalam sejarah kemerdekaan Indonesia?'
+    correctAnswer: Membacakan teks Proklamasi Kemerdekaan
     wrongAnswers:
-    - Skidbidi
-    - Skibdob
-    - skipidapap
-    - Pap
+    - Menjadi juru bicara Jepang
+    - Menjadi ketua BPUPKI
+    - Menyusun strategi militer
   - characterName: Soekarno
-    dialogueText: Halo saya soekarno
-    correctAnswer: skipidapap
+    dialogueText: Di mana Soekarno dan Hatta diasingkan oleh Belanda sebelum kemerdekaan?
+    correctAnswer: 'Ende dan Bengkulu '
     wrongAnswers:
-    - Skidbidi
-    - Skibdob
-    - skipidapap
-    - Pap
+    - Pulau Komodo
+    - Surabaya dan Semarang
+    - Aceh dan Medan
+  - characterName: Soekarno
+    dialogueText: Apa jabatan Bung Karno saat indonesia telah merdeka?
+    correctAnswer: Presiden
+    wrongAnswers:
+    - Menteri Keuangan
+    - Ketua DPR
+    - Panglima TNI

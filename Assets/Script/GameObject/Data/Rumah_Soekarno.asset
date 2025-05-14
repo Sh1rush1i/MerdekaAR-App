@@ -15,4 +15,34 @@ MonoBehaviour:
   objectName: Rumah Soekarno
   sprite: {fileID: 0}
   prefab: {fileID: 0}
-  dialogues: {fileID: 11400000, guid: 4c232a7b77097ea4fba579d605aedfb7, type: 2}
+  dialogues:
+  - characterName: Rumah Soekarno
+    dialogueText: Di mana lokasi Rumah Proklamasi tempat Soekarno membacakan teks
+      Proklamasi?
+    correctAnswer: Jalan Pegangsaan Timur No. 56, Jakarta
+    wrongAnswers:
+    - Jalan Sudirman No. 10
+    - Jalan Malioboro No. 7
+    - Jalan Asia Afrika No. 1
+  - characterName: Rumah Soekarno
+    dialogueText: Apa yang terjadi di Rumah Soekarno pada tanggal 17 Agustus 1945?
+    correctAnswer: 'Pembacaan teks Proklamasi Kemerdekaan Indonesia '
+    wrongAnswers:
+    - Perjanjian dengan Jepang ditandatangani
+    - Soekarno melantik presiden pertama
+    - Upacara pengibaran bendera Belanda
+  - characterName: Rumah Soekarno
+    dialogueText: Apa yang terjadi dengan Rumah Soekarno di Pegangsaan Timur setelah
+      proklamasi?
+    correctAnswer: Dihancurkan pada tahun 1960-an
+    wrongAnswers:
+    - Dipugar dan dijadikan kantor presiden
+    - Dijadikan museum sampai sekarang
+    - Dijual ke pihak asing
+  - characterName: Rumah Soekarno
+    dialogueText: Apa yang kini berdiri di bekas lokasi Rumah Soekarno?
+    correctAnswer: Taman Proklamasi
+    wrongAnswers:
+    - Monumen Nasional
+    - Gedung DPR
+    - Museum Fatahillah

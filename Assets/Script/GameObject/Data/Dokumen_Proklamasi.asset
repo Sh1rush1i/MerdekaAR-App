@@ -15,4 +15,33 @@ MonoBehaviour:
   objectName: Dokumen Proklamasi
   sprite: {fileID: 0}
   prefab: {fileID: 0}
-  dialogues: {fileID: 11400000, guid: 12aae4ca1375fa34aa083a5a1081cc00, type: 2}
+  dialogues:
+  - characterName: Dokumen Proklamasi
+    dialogueText: ' Siapa yang mengetik Dokumen Proklamasi Kemerdekaan Indonesia?'
+    correctAnswer: Sayuti Melik
+    wrongAnswers:
+    - Soekarno
+    - Moh. Yamin
+    - Sutan Sjahrir
+  - characterName: Dokumen Proklamasi
+    dialogueText: Siapa saja yang menandatangani teks Proklamasi?
+    correctAnswer: Soekarno dan Hatta
+    wrongAnswers:
+    - Soekarno dan Yamin
+    - Hatta dan Sjahrir
+    - Soedirman dan Hatta
+  - characterName: Dokumen Proklamasi
+    dialogueText: Apa isi utama dalam Dokumen Proklamasi?
+    correctAnswer: Pernyataan bahwa Indonesia telah merdeka
+    wrongAnswers:
+    - Undang-undang pertama Indonesia
+    - Perintah perang terhadap Belanda
+    - Daftar nama pahlawan
+  - characterName: Dokumen Proklamasi
+    dialogueText: Di mana naskah asli Proklamasi sempat disimpan setelah Proklamasi
+      dibacakan?
+    correctAnswer: Rumah Laksamana Maeda
+    wrongAnswers:
+    - Istana Negara
+    - Gedung Agung
+    - Museum Nasional
