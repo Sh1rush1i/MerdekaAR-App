@@ -42,7 +42,6 @@ public class VurinaFind : MonoBehaviour
             authManager.currentUser.Hatta = true;
             authManager.Save();
         }
-        authManager.currentUser.Hatta = true;
         vurinaScript.enableVurina(gallery.HattaScriptableObject);
         enableVurina();
     }
@@ -53,7 +52,6 @@ public class VurinaFind : MonoBehaviour
             authManager.currentUser.Diorama_Proklamasi = true;
             authManager.Save();
         }
-        authManager.currentUser.Diorama_Proklamasi = true;
         vurinaScript.enableVurina(gallery.Diorama_ProklamasiScriptableObject);
         enableVurina();
     }
@@ -64,7 +62,6 @@ public class VurinaFind : MonoBehaviour
             authManager.currentUser.Dokumen_Proklamasi = true;
             authManager.Save();
         }
-        authManager.currentUser.Dokumen_Proklamasi = true;
         vurinaScript.enableVurina(gallery.Dokumen_ProklamasiScriptableObject);
         enableVurina();
     }
@@ -75,7 +72,6 @@ public class VurinaFind : MonoBehaviour
             authManager.currentUser.Rumah_Soekarno = true;
             authManager.Save();
         }
-        authManager.currentUser.Rumah_Soekarno = true;
         vurinaScript.enableVurina(gallery.Rumah_Soekarno_HattaScriptableObject);
         enableVurina();
     }
