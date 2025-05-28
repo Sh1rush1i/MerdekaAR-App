@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig>
   <Tracking>
+    <ImageTarget name="diorama" size="1052.000000 744.000000" />
+    <ImageTarget name="hatta" size="1052.000000 744.000000" />
+    <ImageTarget name="proklamasi" size="1052.000000 744.000000" />
+    <ImageTarget name="rumah" size="1052.000000 744.000000" />
+    <ImageTarget name="soekarno" size="1052.000000 744.000000" />
     <ImageTarget name="TestMarker" size="1080.000000 1133.000000" />
   </Tracking>
 </QCARConfig>
