@@ -11,6 +11,7 @@ public class Gallery : MonoBehaviour
     public GameObject galeryPanel;
     public GameObject VurinaPanel;
     public GameObject VurinaSearchPanel;
+    public AudioSource audioSource;
     [Space(10)]
     private AuthManager authManager;
 
@@ -71,6 +72,7 @@ public class Gallery : MonoBehaviour
         if(authManager.currentUser.Soekarno && !BOOL)
         {
             enablevurina();
+            audioSource.Play();
             vurinaScript.enableVurina(SoekarnosScriptableObject);
         }
         else if(BOOL)
@@ -84,6 +86,7 @@ public class Gallery : MonoBehaviour
         if(authManager.currentUser.Hatta && !BOOL)
         {
             enablevurina();
+            audioSource.Play();
             vurinaScript.enableVurina(HattaScriptableObject);
         }
         else if(BOOL)
@@ -97,6 +100,7 @@ public class Gallery : MonoBehaviour
         if(authManager.currentUser.Diorama_Proklamasi && !BOOL)
         {
             enablevurina();
+            audioSource.Play();
             vurinaScript.enableVurina(Diorama_ProklamasiScriptableObject);
         }
         else if(BOOL)
@@ -110,6 +114,7 @@ public class Gallery : MonoBehaviour
         if(authManager.currentUser.Dokumen_Proklamasi && !BOOL)
         {
             enablevurina();
+            audioSource.Play();
             vurinaScript.enableVurina(Dokumen_ProklamasiScriptableObject);
         }
         else if(BOOL)
@@ -123,6 +128,7 @@ public class Gallery : MonoBehaviour
         if(authManager.currentUser.Rumah_Soekarno && !BOOL)
         {
             enablevurina();
+            audioSource.Play();
             vurinaScript.enableVurina(Rumah_Soekarno_HattaScriptableObject);
         }
         else if(BOOL)

@@ -111,7 +111,7 @@ for (int i = 0; i < Buttons.Length; i++)
             {
                 Scores += 25;
                 authManager.CheckHighscore(gameObjectDatas, Scores);
-                authManager.currentUser.Score += Scores;
+                authManager.currentUser.Score = Scores;
                 authManager.Save();
             }
             NextDialogue();

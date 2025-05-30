@@ -35,7 +35,8 @@ public class AudioManager : MonoBehaviour
     public void SetSFXVolume(float volume)
     {
         sfxVolume = volume;
-        // sfxSource.volume isn't set directly since we use PlayOneShot with volume
+        if (sfxSource != null)
+            sfxSource.volume = volume;
     }
 
     public void PlaySFX(AudioClip clip)
