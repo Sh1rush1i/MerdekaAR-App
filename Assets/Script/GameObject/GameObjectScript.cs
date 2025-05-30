@@ -6,7 +6,7 @@ public class GameObjectScript : ScriptableObject
 {
     public string objectName;
     public Sprite sprite;
-    public GameObject prefab;
+    public AudioClip audioClip;
 
     [Header("Dialogue List")]
     public List<DialogueEntry> dialogues = new List<DialogueEntry>();

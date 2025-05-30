@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectName: Rumah Soekarno
   sprite: {fileID: 0}
-  prefab: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: 03b935c30b16bc04ab84646ab9ac27f5, type: 3}
   dialogues:
   - characterName: Rumah Soekarno
     dialogueText: Di mana lokasi Rumah Proklamasi tempat Soekarno membacakan teks

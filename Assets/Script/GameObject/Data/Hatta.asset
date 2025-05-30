@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectName: Hatta
   sprite: {fileID: 0}
-  prefab: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: fe4faf18a25413c4cb99221302459a09, type: 3}
   dialogues:
   - characterName: Mohammad Hatta
     dialogueText: Apa julukan yang sering diberikan kepada Mohammad Hatta?

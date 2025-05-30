@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectName: Dokumen Proklamasi
   sprite: {fileID: 0}
-  prefab: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: 09bbf5d6831ace040a18965d57eae3db, type: 3}
   dialogues:
   - characterName: Dokumen Proklamasi
     dialogueText: ' Siapa yang mengetik Dokumen Proklamasi Kemerdekaan Indonesia?'

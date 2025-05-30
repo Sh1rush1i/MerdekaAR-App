@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectName: Soekarno
   sprite: {fileID: 0}
-  prefab: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: 78f3a6155e84d3b43980e5256bacba25, type: 3}
   dialogues:
   - characterName: Soekarno
     dialogueText: Siapakah tokoh yang membacakan teks Proklamasi Kemerdekaan Indonesia

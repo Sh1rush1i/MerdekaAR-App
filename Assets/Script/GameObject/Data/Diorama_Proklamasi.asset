@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectName: Diorama Proklamasi
   sprite: {fileID: 0}
-  prefab: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: 0847e20dffcd1e94483fdeb7e252c524, type: 3}
   dialogues:
   - characterName: Diorama Porklamasi
     dialogueText: Apa yang ditampilkan dalam Diorama Proklamasi?
