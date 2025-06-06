@@ -110,9 +110,12 @@ for (int i = 0; i < Buttons.Length; i++)
             if (allAnswers[buttonIndex].isCorrect)
             {
                 Scores += 25;
-                authManager.CheckHighscore(gameObjectDatas, Scores);
-                authManager.currentUser.Score = Scores;
-                authManager.Save();
+                if (Scores >= authManager.Returnhighscore(gameObjectDatas))
+                {
+                    authManager.CheckHighscore(gameObjectDatas, Scores);
+                    authManager.Save();
+                }
+                authManager.currentUser.Score += Scores;
             }
             NextDialogue();
         });

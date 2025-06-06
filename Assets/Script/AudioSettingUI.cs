@@ -24,6 +24,7 @@ public class AudioSettingsUI : MonoBehaviour
         // Set sliders to current user values
         float musicVol = authManager.currentUser.Music;
         float sfxVol = authManager.currentUser.SFX;
+        
 
         musicSlider.value = musicVol;
         sfxSlider.value = sfxVol;

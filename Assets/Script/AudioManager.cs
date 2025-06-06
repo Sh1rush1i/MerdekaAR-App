@@ -7,8 +7,11 @@ public class AudioManager : MonoBehaviour
     [Header("Audio Sources")]
     public AudioSource musicSource;
     public AudioSource sfxSource;
+    public AudioSource defaultMusicClip;
 
     [Range(0f, 1f)] public float musicVolume = 1f;
+    [Range(0f, 1f)] public float DefmusicVolume = 1f;
+
     [Range(0f, 1f)] public float sfxVolume = 1f;
 
     private void Awake()
@@ -28,8 +31,11 @@ public class AudioManager : MonoBehaviour
     public void SetMusicVolume(float volume)
     {
         musicVolume = volume;
+        DefmusicVolume = volume;
         if (musicSource != null)
             musicSource.volume = volume;
+            defaultMusicClip.volume = volume;
+        
     }
 
     public void SetSFXVolume(float volume)
